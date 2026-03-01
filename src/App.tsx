@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-    <TextInput onTextChange={handleText} placeholder="Type Here" initialValue= "blah blah blah"/>
+    <TextInput onTextChange={handleText} placeholder="Type Here" initialValue= ""/>
     </>
   )
 }
