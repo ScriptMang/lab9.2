@@ -10,3 +10,7 @@ export interface TextStats {
     readingTime: number;
 }
 
+export interface StatsDisplayProps {
+    stats: TextStats;
+    showReadingTime?: boolean;
+}
