@@ -3,3 +3,10 @@ export interface TextInputProps {
     placeholder?: string;
     initialValue?: string
 }
+
+export interface TextStats {
+    characterCount: number;
+    wordCount: number;
+    readingTime: number;
+}
+
