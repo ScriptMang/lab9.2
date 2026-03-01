@@ -5,6 +5,7 @@ function TextInput({onTextChange, placeholder, initialValue}: TextInputProps){
     return (
         <>
         <textarea 
+          id ="textBox"
           placeholder={placeholder}
           defaultValue={initialValue}
           onChange= {(e) => onTextChange(e.target.value)}
