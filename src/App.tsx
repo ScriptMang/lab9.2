@@ -1,11 +1,12 @@
-import { useState } from 'react'
+import {TextInput} from './components/TextInput/TextInput'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
+    <TextInput placeholder="Type Here" initialValue= "blah blah blah"/>
  
     </>
   )
