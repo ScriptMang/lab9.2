@@ -25,7 +25,7 @@ function App() {
     })
   }
 
- const blankStats: TextStats = {
+ const statsData: TextStats = {
    characterCount: charCount,
    wordCount: wCount, 
    readingTime: 0
@@ -34,7 +34,7 @@ function App() {
   return (
     <>
     <TextInput onTextChange={handleText} placeholder="Type Here" initialValue= ""/>
-    <StatsDisplay stats={blankStats} showReadingTime={true}/>
+    <StatsDisplay stats={statsData} showReadingTime={true}/>
     </>
   )
 }
