@@ -8,16 +8,26 @@ import {useState} from "react"
 function App() {
 
   const [charCount, setCharCount] = useState(0);
+  const [wCount, setWCount] = useState(0);
+  
   // test func to handle text area 
   const handleText = (text: string) =>  {
     const charArr = [...text];
     console.log(`The given text is: ${charArr}`)
     setCharCount(charArr.length);
+
+    // need to get word count
+    const words:string[] =  text.split(" ");
+    console.log(`The given words is: ${words}`)
+    words.forEach(word => {
+       const searchWord = [...word];
+       searchWord.length > 0 ? setWCount(words.length) : setWCount(words.length-1);
+    })
   }
 
  const blankStats: TextStats = {
    characterCount: charCount,
-   wordCount: 0, 
+   wordCount: wCount, 
    readingTime: 0
  }; 
 
