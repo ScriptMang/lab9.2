@@ -1,6 +1,6 @@
 import TextInput from './components/TextInput/TextInput'
 import StatsDisplay from './components/StatsDisplay/StatsDisplay'
-import type { TextStats } from '../types/index.ts'
+import type { TextStats } from './types/index.ts'
 import './App.css'
 
 import {useState} from "react"

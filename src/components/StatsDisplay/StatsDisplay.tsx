@@ -1,4 +1,4 @@
-import type {StatsDisplayProps} from '../../../types/index.ts'
+import type {StatsDisplayProps} from '../../types/index.ts'
 
 
 function StatsDisplay({stats, showReadingTime}: StatsDisplayProps){
