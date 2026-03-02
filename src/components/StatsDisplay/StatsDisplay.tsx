@@ -5,16 +5,24 @@ function StatsDisplay({stats, showReadingTime}: StatsDisplayProps){
     const {characterCount, wordCount, readingTime} = stats;
      
     return (
-     <>
-     <p>Characters</p>
-     <div>{characterCount}</div>
-     
-     <p>Words</p>
-     <div>{wordCount}</div>
+     <div id="statsCounter">
 
-     <p>Reading Time</p>
-     {showReadingTime ? <div>{readingTime}</div> : showReadingTime}
-     </>
+     <div>
+      <p>Characters</p>
+      <div>{characterCount}</div>
+     </div>   
+     
+     <div>
+      <p>Words</p>
+      <div>{wordCount}</div>
+     </div> 
+     
+     <div>
+      <p>Reading Time</p>
+      {showReadingTime ? <div>{readingTime}</div> : showReadingTime}
+     </div> 
+
+     </div>
     )
 }
 
