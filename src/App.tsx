@@ -3,16 +3,20 @@ import StatsDisplay from './components/StatsDisplay/StatsDisplay'
 import type { TextStats } from '../types/index.ts'
 import './App.css'
 
+import {useState} from "react"
 
 function App() {
 
+  const [charCount, setCharCount] = useState(0);
   // test func to handle text area 
   const handleText = (text: string) =>  {
-    console.log(`The given text is: ${text}`)
+    const charArr = [...text];
+    console.log(`The given text is: ${charArr}`)
+    setCharCount(charArr.length);
   }
 
  const blankStats: TextStats = {
-   characterCount: 0,
+   characterCount: charCount,
    wordCount: 0, 
    readingTime: 0
  }; 
