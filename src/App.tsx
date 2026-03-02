@@ -20,7 +20,7 @@ function App() {
   return (
     <>
     <TextInput onTextChange={handleText} placeholder="Type Here" initialValue= ""/>
-    <StatsDisplay stats={blankStats} showReadingTime={false}/>
+    <StatsDisplay stats={blankStats} showReadingTime={true}/>
     </>
   )
 }
