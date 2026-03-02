@@ -10,7 +10,7 @@ function App() {
   const [charCount, setCharCount] = useState(0);
   const [wCount, setWCount] = useState(0);
   
-  // test func to handle text area 
+  // handletext updates the character_count, word_count, and reading time 
   const handleText = (text: string) =>  {
     const charArr = [...text];
     console.log(`The given text is: ${charArr}`)
