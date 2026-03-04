@@ -6,7 +6,13 @@
 
 2. What considerations did you make when calculating reading time?
 
+ I couldn't figure it out.
+
 3. How did you ensure the UI remained responsive during rapid text input?
+ 
+ Not to sure what you mean by this.
 
 4. What challenges did you face when implementing the statistics calculations?
+
+I couldn't figure out how to implement the reading time.
 
