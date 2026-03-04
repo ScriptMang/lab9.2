@@ -1,6 +1,7 @@
 import TextInput from './components/TextInput/TextInput'
 import StatsDisplay from './components/StatsDisplay/StatsDisplay'
 import type { TextStats } from './types/index.ts'
+import CharacterCounter from './components/CharacterCounter/CharacterCounter'
 import './App.css'
 
 import {useState} from "react"
@@ -35,6 +36,7 @@ function App() {
     <>
     <TextInput onTextChange={handleText} placeholder="Type Here" initialValue= ""/>
     <StatsDisplay stats={statsData} showReadingTime={true}/>
+    <CharacterCounter minWords={25} maxWords={100} targetReadingTime={3}/>
     </>
   )
 }
